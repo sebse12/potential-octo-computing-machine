@@ -1,7 +1,4 @@
-RewriteEngine On 
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^(.*)$ $1.php [NC,L]
-RewriteRule ^([0-9]+)\/([0-9]+)$ index.php?n=$1<FilesMatch "\.(inc|sql|lock)$">
+<FilesMatch "\.(inc|sql|lock)$">
   Order allow,deny
   Deny from all
 </FilesMatch>
